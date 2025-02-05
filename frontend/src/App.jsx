@@ -1,20 +1,19 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { LoginPage, SignupPage, Home, CreateProduct } from "./Routes";
+import { BrowserRouter,Routes,Route } from "react-router-dom"; 
+import { LoginPage, SignupPage, CreateProduct, Home } from "./Routes.jsx"
 
-import "./App.css";
+import './App.css';
 
-const App = () => {
-  return (
+function App(){
+  return(
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/create-product" element={<CreateProduct />} />
+        <Route path="/Login" element={<LoginPage/>}/>
+        <Route path="/Signup" element={<SignupPage/>}/>
+        <Route path="/create-product" element= {<CreateProduct />} />
+        <Route path="/Home" element= {<Home />} />
       </Routes>
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;

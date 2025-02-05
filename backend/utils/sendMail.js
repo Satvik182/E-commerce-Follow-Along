@@ -9,10 +9,12 @@ const sendMail = async (options) => {
             service: process.env.SMTP_SERVICE,
             auth: {
                 user: process.env.SMTP_EMAIL,
-                pass: process.env.SMTP_PASSWORD
-            }
+                pass: process.env.SMTP_PASSWORD,
+            },
         });
     } catch (error) {
-        console.error(error);
+        console.error('Error sending email:', error);
     }
 };
+
+module.exports = sendMail;
