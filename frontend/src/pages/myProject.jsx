@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Product from "../components/auth/Product";
 
 export default function MyProducts() {
@@ -30,8 +30,8 @@ export default function MyProducts() {
     };
 
     return (
-        <div className="w-full min-h-screen bg-neutral-800 p-6 text-white">
-            <h1 className="text-3xl text-center py-4">My Products</h1>
+        <div className="w-full min-h-screen bg-neutral-800">
+            <h1 className="text-3xl text-center py-4 p-6 text-white">My Products</h1>
             <div className="flex justify-center mb-4">
                 <input
                     type="email"
@@ -47,8 +47,8 @@ export default function MyProducts() {
                     Search
                 </button>
             </div>
-            {loading && <div className="text-center">Loading products...</div>}
-            {error && <div className="text-center text-red-500">Error: {error}</div>}
+            {loading && <div className="text-center text-white mt-10">Loading products...</div>}
+            {error && <div className="text-center text-red-500 mt-10">Error: {error}</div>}
             {!loading && !error && products.length === 0 && (
                 <div className="text-center text-gray-400">Product not created.</div>
             )}
@@ -58,5 +58,5 @@ export default function MyProducts() {
                 ))}
             </div>
         </div>
-    );
+);
 }
