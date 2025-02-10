@@ -262,4 +262,4 @@ This milestone focuses on displaying user-specific products by filtering them ba
 - Implement a function to retrieve and display filtered data in the frontend.  
 - Use the product card component for dynamic rendering.  
 
-This ensures users see only their added products, improving personalization.
+This ensures users see only their added products, improving personalization
