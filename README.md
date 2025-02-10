@@ -298,3 +298,8 @@ By completing this milestone, we have learned:
 - How to handle update operations effectively in a **full-stack** application.
 
 ---
+
+# Milestone 14 - Delete Products in MongoDB
+
+## 🌟 Overview
+In this milestone, we have implemented the functionality to **delete
