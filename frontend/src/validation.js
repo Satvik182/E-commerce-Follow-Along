@@ -1,6 +1,6 @@
 const ValidationFormObject = {
-    validateName: (name) => {
-      const nameRegex = /^[a-zA-Z][a-zA-Z\s]{1,49}$/;
+    validteName: (name) => {
+      const nameRegex = /^[a-zA-Z][a-zA-Z\s'-]{1,49}$/;
       if (name.length < 2) {
         return 'Name cannot be less than 2 letters';
       }
@@ -9,8 +9,7 @@ const ValidationFormObject = {
       }
       return true;
     },
-  
-    validatePass: (password) => {
+    validtePass: (password) => { 
       const passwordRegex = {
         minLength: 8,
         maxLength: 128,
@@ -18,13 +17,14 @@ const ValidationFormObject = {
         hasLowerCase: /[a-z]/,
         hasSpecialChar: /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/,
       };
-  
       if (password.length < passwordRegex.minLength) {
         return 'Password Should be more than or equal to 8 characters';
       }
+ 
       if (password.length > passwordRegex.maxLength) {
         return 'Password should be less than 128 characters';
       }
+ 
       if (!passwordRegex.hasLowerCase.test(password)) {
         return 'Password should have some lowercase characters (a-z)';
       }
@@ -34,22 +34,20 @@ const ValidationFormObject = {
       if (!passwordRegex.hasSpecialChar.test(password)) {
         return 'Password should have special characters';
       }
+ 
       return true;
     },
-  
-    validateEmail: (email) => {
+    validteEmail: (email) => {
       const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       if (email.length > 254) {
         return { isValid: false, error: 'Email is too long' };
       }
+ 
       if (!emailRegex.test(email)) {
         return 'Write the email in the correct format (e.g., name@example.com)';
       }
       return true;
-      },
-      
-     
-      
-    
+    },
   };
-   export default ValidationFormObject;
+ 
+  export default ValidationFormObject;

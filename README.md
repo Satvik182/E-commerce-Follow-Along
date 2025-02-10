@@ -165,3 +165,101 @@ In the next milestone, we’ll add features like filtering and sorting.
 ### Submission 📥
 - Push code to GitHub (public repo).
 - Update README and share the repo link.
+
+## Milestone : 9
+
+Today, we will create a frontend form for taking products input. Let’s dive in and understand what this all means!
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Learn how to create a form that will take all the details of product
+Learn how to take multiple images as input.
+Why Create Product form?
+Here we will create an form to input all the details of product.
+This details will be eventually saved in database and will be displayed on products home page we created in previous milestone.
+Steps for Milestone 9📝
+Create the form for products
+
+This form will take multiple product images images as input
+
+Note:- This lesson will help you in understanding the basic creating of products please feel free to experiment on adding more features like creating an admin access and allow only admin to upload products or create and shop profile and a user with only shop profile can upload.
+
+---
+
+## Milestone 10:
+
+**Creating the Product Schema and API Endpoint**
+In this milestone, we focused on defining the structure of product data and creating an API endpoint to store product details in MongoDB.
+1. Product Schema Definition:
+- Defined a structured product schema using Mongoose to store product data in MongoDB.
+- Ensured each field has proper validation to maintain data integrity:
+- Name: Required, string**
+- Description: Required, string
+- Price: Required, number, with validation for non-negative values
+- Image URL(s): Required, array of strings for multiple image storage
+- Category: Required, string
+- CreatedAt: Automatically generated timestamp
+
+2. Endpoint Creation:
+- Developed a POST endpoint (/api/products) to accept product details from the frontend.
+- Implemented validation to ensure only correctly formatted data is stored in the database.
+- Saved product information to MongoDB using Mongoose models.
+3. Data Validation & Integrity:
+- Enforced strict validation to prevent invalid or incomplete product entries.
+- Returned appropriate error messages for missing or incorrect data inputs.
+4. Future Enhancements & Experimentation:
+- Considered adding role-based access control:
+- Admin Access: Only admin users can create new products.
+- Shop Profiles: Restrict product uploads to users with a registered shop profile.
+- Image Upload Handling: Implement a cloud-based solution (e.g., Cloudinary, AWS S3) for better image management. make this short.
+
+## Milestone 11 - Dynamic Home Page with Product Data
+
+### Overview
+#### In this milestone, we will make the home page dynamic by fetching and displaying all products stored in MongoDB.
+
+- We will write a backend API endpoint to retrieve product data.
+- The frontend will call this API and display the products dynamically using the ProductCard component.
+#### Learning Goals 🎯
+By completing this milestone, you will learn:
+- ✅ How to write an API endpoint to fetch data from MongoDB.
+- ✅ How to receive and handle data on the frontend.
+- ✅ How to display data dynamically using components.
+
+### Steps to Complete Milestone 11 📝
+
+1. Backend: Create an API Endpoint
+- Create an API route in Express.js to fetch all products from MongoDB.
+- Use Mongoose to retrieve the data.
+- This API fetches all products and sends them in JSON format.
+- The frontend will call this API to get the list of products.
+
+
+2. Frontend: Fetch Product Data
+- Create a function to fetch product data from the backend using fetch() or Axios.
+- Store the data in a state variable.
+- useEffect calls the API when the page loads.
+- setProducts stores the fetched data.
+- map() loops through the products and passes each to ProductCard.
+
+
+3. Display Products Dynamically
+- The ProductCard component will receive product data as a prop and display it.
+- Displays product image, name, and price dynamically.
+
+#### Final Outcome 🎉
+- ✅ The backend API sends all product data.
+- ✅ The frontend fetches this data.
+- ✅ Products are dynamically displayed using the ProductCard component.
+
+### Milestone 12: My Products Page  
+
+This milestone focuses on displaying user-specific products by filtering them based on email.  
+
+#### Key Tasks:  
+- Create an API endpoint to fetch products linked to the user’s email.  
+- Implement a function to retrieve and display filtered data in the frontend.  
+- Use the product card component for dynamic rendering.  
+
+This ensures users see only their added products, improving personalization.
