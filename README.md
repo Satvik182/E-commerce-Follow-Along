@@ -326,3 +326,13 @@ In this milestone, we'll create and integrate a reusable Navbar component across
 
 This milestones teaches how to build and reuse a responsive Navbar for seamless navigation
 
+### Milestone 16: Product Info Page
+
+In this milestone, we will create a page to display product details, choose quantity, and add to the cart.
+
+#### Key Tasks:
+- Create a page to display product data.
+- Add a quantity selector.
+- Implement an "Add to Cart" button.
+
+This milestone focuses on building a functional product info page for users.
