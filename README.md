@@ -302,4 +302,26 @@ By completing this milestone, we have learned:
 # Milestone 14 - Delete Products in MongoDB
 
 ## 🌟 Overview
-In this milestone, we have implemented the functionality to **delete
+In this milestone, we have implemented the functionality to **delete** products from MongoDB. Users can now remove existing products by clicking a delete button.
+
+## 🎯 Learning Goals
+By completing this milestone, we have learned:
+- How to write an **endpoint** that deletes a product from MongoDB using a specific ID.
+- How to handle delete operations effectively in a **full-stack** application.
+
+---`
+
+### Milestone 15: Navbar Component Integration
+
+In this milestone, we'll create and integrate a reusable Navbar component across all screens for smooth navigation.
+
+#### Key Tasks:
+- Create a Navbar with links to:
+  - Home
+  - My Products
+  - Add Product
+  - Cart
+- Make the Navbar responsive.
+- Add the Navbar to all pages for easy navigation.
+
+This milestone teaches how to build and reuse a responsive Navbar for seamless navigation.
