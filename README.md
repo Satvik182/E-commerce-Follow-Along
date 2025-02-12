@@ -324,4 +324,5 @@ In this milestone, we'll create and integrate a reusable Navbar component across
 - Make the Navbar responsive.
 - Add the Navbar to all pages for easy navigation.
 
-This milestone teaches how to build and reuse a responsive Navbar for seamless navigation
+This milestones teaches how to build and reuse a responsive Navbar for seamless navigation
+
