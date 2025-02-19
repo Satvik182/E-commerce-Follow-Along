@@ -263,5 +263,16 @@ In this milestone, we will create a backend endpoint to retrieve all products in
 This milestone focuses on implementing backend logic to retrieve cart items efficiently.
 
 
+### Milestone 19: Cart Page Functionality 🎯 Goals:
+
+Display products from the /cart endpoint.
+Add + and - buttons to adjust product quantities.
+Update backend endpoints to handle quantity changes.
+### 📝 Steps:
+
+Cart Page: Fetch and display products.
+Quantity Management: Implement buttons to modify quantity.
+Backend Updates: Create endpoints for quantity adjustments and ensure database consistency.
+### 📥 Submission: Push code to GitHub, update README, and submit the repository link.
 
 ---------------------------------------
