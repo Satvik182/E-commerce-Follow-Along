@@ -275,4 +275,9 @@ Quantity Management: Implement buttons to modify quantity.
 Backend Updates: Create endpoints for quantity adjustments and ensure database consistency.
 ### 📥 Submission: Push code to GitHub, update README, and submit the repository link.
 
+
+# Milestone 20 - Profile Page & User Data Display
+
+Welcome to Milestone 20 of our project! 🌟 In this milestone, we focused on creating a user profile page where we can display all the user data fetched from the backend. Additionally, we developed an API endpoint to send user data, which includes details like name, profile photo, email, and addresses.
+
 ---------------------------------------
