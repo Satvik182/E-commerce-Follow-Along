@@ -66,6 +66,13 @@ const OrderConfirmation = () => {
 
     const handlePlaceOrder = async () => {
         try {
+            const orderItems = cartItems.map(item => ({
+                product: item.product,
+                name: item.name,
+                quantity: item.quantity,
+                price: item.price,
+                image: item.images && item.images.length > 0 ? item.images[0] : '/default-avatar.png'
+            }));
             setLoading(true);
             const response = await axios.post('http://localhost:5000/api/v2/order/place', {
                 email,
