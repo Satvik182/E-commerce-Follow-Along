@@ -280,4 +280,20 @@ Backend Updates: Create endpoints for quantity adjustments and ensure database c
 
 Welcome to Milestone 20 of our project! 🌟 In this milestone, we focused on creating a user profile page where we can display all the user data fetched from the backend. Additionally, we developed an API endpoint to send user data, which includes details like name, profile photo, email, and addresses.
 
----------------------------------------
+# Milestone 21 : Adding Address colum to the profile page
+
+In this milestone we create a "createAddress.jsx" file in pages folder where we write the code for add address button to make it functional and will send us to the add address page.
+
+
+# Milestone 22 - Save Address in User Profile
+
+Welcome to Milestone 22 of our project! 🎉 In this milestone, we focused on creating a backend endpoint that allows users to save their address directly into their user profile. We developed the necessary endpoint to receive the address from the frontend and update the user’s profile in the database by adding the address to the user’s address array.
+
+
+# Milestone 23: Place Order Functionality
+
+Welcome to Milestone 23! In this milestone, we focused on implementing the "Place Order" functionality, which includes creating a button inside the cart to place an order, creating a select address page, and writing a backend schema to store order details. This milestone helps in understanding the flow of placing an order and handling addresses in an e-commerce application.
+
+# Milestone 24: Order Confirmation Page
+
+Welcome to Milestone 24! In this milestone, we focused on creating the "Order Confirmation" page, where we display the products being ordered, the selected delivery address, and the total price of the cart. This step is essential in the checkout process and helps users review their order before finalizing the purchase.
