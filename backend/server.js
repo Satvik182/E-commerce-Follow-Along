@@ -1,12 +1,20 @@
 const app = require("./app");
 const connectDatabase = require("./db/Database");
+const cors = require('cors');
+
+
+app.use(cors({
+  origin: ['http://localhost:5173','http://localhost:5178'], // Allow frontend origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+  credentials: true // If using cookies/auth
+}));
 
 // Handling uncaught Exception when setting up backend server
 process.on("uncaughtException", (err) => {
   console.log(`Error: ${err.message}`);
   console.log(`shutting down the server for handling uncaught exception`);
 });
-connectDatabase()
+
 // config
 if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({
@@ -14,7 +22,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   });
 }
 
-
+connectDatabase();
 
 const server = app.listen(process.env.PORT, () => {
   console.log(`Server is running on http://localhost:${process.env.PORT}`);
@@ -29,3 +37,4 @@ process.on("unhandledRejection", (err) => {
     process.exit(1); // Exit with failure code
   });
 });
+
